@@ -11,13 +11,13 @@
     <link rel="icon" type="image/png" href="images/ux-favicon.ico">
     <link rel="stylesheet" href="css/foundation.min.css"></link>
     <link rel="stylesheet" href="fontawesome/web-fonts-with-css/css/fontawesome-all.min.css">
-    <script src="js/vendor/foundation.min.js"></script>
     <script src="js/vendor/jquery.js"></script>
+    <script src="js/vendor/foundation.min.js"></script>
     <script src="js/vendor/what-input.js"></script>
 </head>
 <body>
 <?php
- include navbar.php;
+ include "navbar.php";
  ?>
 </body>
 </html>
