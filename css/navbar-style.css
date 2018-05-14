@@ -1,0 +1,51 @@
+/*Side mobile navigation container*/
+#mobile-nav{
+    background-color: #1779ba;
+    height:100vh;
+    width: 0; /* 0 width - change this with JavaScript */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Stay on top */
+    top: 0; /* Stay at the top */
+    right: 0; /* Stay to the right */
+    overflow-x: hidden; /* Disable horizontal scroll */
+    padding-top: 70px; /* Place content 60px from the top */
+    transition: 0.5s; /* 0.5 second transition effect to slide in the sidenav */
+
+
+}
+/*Side mobile navigation links*/
+#mobile-nav a{
+    padding: 8px 8px 8px 32px;
+    text-decoration: none;
+    font-size: 25px;
+    color: #818181;
+    display: block;
+    transition: 0.3s;
+}
+
+#mobile-nav a:hover {
+    color: #f1f1f1;
+}
+/*Side mobile navigation close*/
+#mobile-nav-close{
+    position: absolute;
+    top: 0;
+    left: 25px;
+    font-size: 36px;
+    margin-top:30px;
+    margin-right: 50px;
+}
+
+#mobile-nav-toggle-container{
+    display:none;
+}
+/*Based on the height of the screen, it changes the properties of the assigned elements*/
+@media screen and (max-width: 47em) {
+    #mobile-nav a {font-size: 20px;}
+    #mobile-nav-toggle-container {display:initial;}
+}
+
+@media screen and (min-width: 48em){
+    #mobile-nav a{max-height: 25px;}
+    #mobile-nav-toggle-container{display:none;}
+}
