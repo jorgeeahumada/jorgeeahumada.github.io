@@ -49,3 +49,13 @@
     #mobile-nav a{max-height: 25px;}
     #mobile-nav-toggle-container{display:none;}
 }
+
+/*Main navigation */
+#nav-container {
+    width: 100vw;
+    padding: 1vh 0 1vh 0;
+}
+/*Main navigation links*/
+#nav-container a{
+    margin: 0 3vw 0 3vw;
+}
