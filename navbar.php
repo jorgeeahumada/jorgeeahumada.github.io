@@ -4,7 +4,6 @@
 <div class="container " id="nav-container">
     <ul class="menu">
         <li><a href="#">Home</a></li>
-        <li><a href="#">About Me</a></li>
         <li><a href="#">Education</a></li>
         <li><a href="#">Experience</a></li>
         <li><a href="#">Skills</a></li>
@@ -20,7 +19,6 @@
 <!--Has the main contents of the side navigation bar-->
 <div id="mobile-nav">
         <a href="#">Home</a>
-        <a href="#">About Me</a>
         <a href="#">Education</a>
         <a href="#">Experience</a>
         <a href="#">Skills</a>

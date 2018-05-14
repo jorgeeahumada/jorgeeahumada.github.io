@@ -11,3 +11,14 @@ function closeNav() {
     document.body.style.backgroundColor = "white";
 
 }
+
+$(document).on('click', function (e) {
+    if ($(e.target).closest("#mobile-nav").length === 0) {
+        var openNav = ($("#mobile-nav").width() > 10);
+        if (openNav){
+            $("#mobile-nav").width(0);
+            $('body').css('background-color','white');
+        }
+
+    }
+});

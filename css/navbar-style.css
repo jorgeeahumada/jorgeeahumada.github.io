@@ -62,11 +62,12 @@
 /*Navigation list*/
 #nav-container ul{
     float:right;
-    padding-right:9vw;
+    padding-right:15vw; /* alings the list close to the center of the container */
     min-width:47em;
 }
 /*Main navigation links*/
 #nav-container ul li{
+    margin: 0 1vw 0 1vw;
     font-size: 3vh;
 
 }
