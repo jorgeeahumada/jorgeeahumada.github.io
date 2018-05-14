@@ -1,13 +1,17 @@
 <?php
 ?>
 <!--Traditional desktop navigation bar-->
-<div class="container" id="nav-container">
-    <a href="#">Home</a>
-    <a href="#">About Me</a>
-    <a href="#">Education</a>
-    <a href="#">Experience</a>
-    <a href="#">Skills</a>
-    <a href="#">Contact</a>
+<div class="container " id="nav-container">
+    <ul class="menu">
+        <li><a href="#">Home</a></li>
+        <li><a href="#">About Me</a></li>
+        <li><a href="#">Education</a></li>
+        <li><a href="#">Experience</a></li>
+        <li><a href="#">Skills</a></li>
+        <li><a href="#">Contact</a></li>
+    </ul>
+
+
 </div>
 <!--Button opens the navigation bar when clicked-->
 <div class="container float-right" id="mobile-nav-toggle-container">
