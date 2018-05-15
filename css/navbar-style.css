@@ -37,6 +37,7 @@
 }
 
 #mobile-nav-toggle-container{
+    z-index:2;
     display:none;
 }
 /*Based on the width of the screen, it changes the properties of the assigned elements*/

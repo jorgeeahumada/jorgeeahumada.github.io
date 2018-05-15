@@ -9,9 +9,10 @@
     <meta name="keywords" content="web design, user experience, informatics, front end development, full
         stack development, portfolio, responsive design">
     <link rel="icon" type="image/png" href="images/ux-favicon.ico">
-    <link rel="stylesheet" href="css/navbar-style.css">
     <link rel="stylesheet" href="css/foundation.min.css">
     <link rel="stylesheet" href="fontawesome/web-fonts-with-css/css/fontawesome-all.min.css">
+    <link rel="stylesheet" href="css/navbar-style.css">
+    <link rel="stylesheet" href="css/hero-style.css">
     <script src="js/vendor/jquery.js"></script>
     <script src="js/vendor/what-input.js"></script>
     <script src="js/vendor/foundation.min.js"></script>
@@ -19,10 +20,11 @@
 
 </head>
 <body>
-
+<div class="hero-section">
 <?php
 include "navbar.php";
 ?>
+</div>
 
 </body>
 </html>

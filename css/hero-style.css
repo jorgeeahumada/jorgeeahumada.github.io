@@ -1,0 +1,10 @@
+.hero-section {
+    background: url('../images/temporary-hero.jpg') 50% no-repeat;
+    background-size: cover;
+    height: 100vh;
+    /*text-align: center;*/
+    display: flex;
+    /*align-items: center;*/
+    /*justify-content: center;*/
+    z-index:-1;
+}
