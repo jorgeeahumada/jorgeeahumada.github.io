@@ -14,7 +14,7 @@
 </div>
 <!--Button opens the navigation bar when clicked-->
 <div class="container float-right" id="mobile-nav-toggle-container">
-    <button onclick="openNav()" type="button" ><i class="fas fa-bars"></i></button>
+    <button onclick="openNav()" type="button" ><i class="fas fa-bars fa-lg"></i></button>
 </div>
 <!--Has the main contents of the side navigation bar-->
 <div id="mobile-nav">
@@ -24,7 +24,7 @@
         <a href="#">Skills</a>
         <a href="#">Contact</a>
 <!--    Button closes the navigation bar when click-->
-        <button onclick="closeNav()" class="float-center" type="button" id="mobile-nav-close"><i class="fas fa-times fa-md"></i></button>
+        <button onclick="closeNav()" class="float-center" type="button" id="mobile-nav-close"><i class="fas fa-times fa-lg"></i></button>
 </div>
 <div>
 

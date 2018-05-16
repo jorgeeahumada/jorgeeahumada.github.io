@@ -20,10 +20,20 @@
 
 </head>
 <body>
-<div class="hero-section">
-<?php
-include "navbar.php";
-?>
+<div class="hero-image">
+    <div id="mobile-overlay"></div>
+    <?php
+    include "navbar.php";
+    ?>
+    <div class="grid-x" id="hero-showcase-container">
+        <div class="cell large-5 large-offset-1 medium-7 medium-offset-1 small-offset-1 small-10" id="hero-catch-phrase-container">
+            <p id="hero-catch-phrase">Hello, I'm a recent graduate ready to create</p>
+        </div>
+    </div>
+
+<!--    <div id="two-page-div">-->
+<!--        <p>Hello world!!!!!</p>-->
+<!--    </div>-->
 </div>
 
 </body>

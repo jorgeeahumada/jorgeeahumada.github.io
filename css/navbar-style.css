@@ -4,7 +4,7 @@
     height:100vh;
     width: 0; /* 0 width - change this with JavaScript */
     position: fixed; /* Stay in place */
-    z-index: 1; /* Stay on top */
+    z-index: 2; /* Stay on top */
     top: 0; /* Stay at the top */
     right: 0; /* Stay to the right */
     overflow-x: hidden; /* Disable horizontal scroll */
@@ -17,7 +17,8 @@
 #mobile-nav a{
     padding: 8px 8px 8px 32px;
     text-decoration: none;
-    font-size: 3vh;
+    font-size: 5vh;
+    font-weight: bold;
     color: #818181;
     display: block;
     transition: 0.3s;
@@ -28,7 +29,8 @@
 }
 /*Side mobile navigation close*/
 #mobile-nav-close{
-    position: absolute;
+    position: absolute; /* allows the button to scroll down with the navbar without it being
+    fixed in position */
     top: 0;
     left: 25px;
     font-size: 3.5vh;
@@ -37,15 +39,35 @@
 }
 
 #mobile-nav-toggle-container{
-    z-index:2;
     display:none;
-}
-/*Based on the width of the screen, it changes the properties of the assigned elements*/
-@media screen and (max-width: 47em) {
-    #mobile-nav-toggle-container {display:initial;}
+    position:fixed; /*makes the toggle button scroll down with the page it also allows
+     to have the button to the right over the flex container */
+    right:0; /* keeps the button to the right of the screen */
+    padding: 2vh 4vw 2vh 4vw; /* gives some distance to the button from the edges of the screen*/
+
 }
 
-@media screen and (min-width: 47em){
+/*This is the grey overlay that appears when you open the mobile navigation bar*/
+#mobile-overlay{
+    position: fixed; /* Sit on top of the page content */
+    display: none; /* Hidden by default */
+    width: 100%; /* Full width (cover the whole page) */
+    height: 100%; /* Full height (cover the whole page) */
+    /*The next ones make sure the containers stays align with all the corners of the screen*/
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0,0,0,0.5); /* Black background with opacity */
+    z-index: 2; /* Specify a stack order in case you're using a different order for other elements */
+    cursor: pointer; /* Add a pointer on hover */
+}
+/*Based on the width of the screen, it changes the properties of the assigned elements*/
+@media screen and (max-width: 800px) {
+    #mobile-nav-toggle-container {display:block;}
+}
+
+@media screen and (min-width: 801px){
     #mobile-nav-toggle-container{display:none;}
 }
 
@@ -63,25 +85,31 @@
 /*Navigation list*/
 #nav-container ul{
     float:right;
-    padding-right:15vw; /* alings the list close to the center of the container */
-    min-width:47em;
+    right:5rem; /* aligns the list close to the center of the container  this measurement is
+    based on the rem since it makes it easier to set the right media queries*/
+    min-width:40rem;
 }
 /*Main navigation links*/
 #nav-container ul li{
-    margin: 0 1vw 0 1vw;
+    margin: 0 .75vw 0 .75vw;
     font-size: 3vh;
+    font-weight: 500;
 
+}
+
+#nav-container ul li a{
+    padding: 1vh 1vw;
 }
 
 #nav-container ul li a:hover{
     color:#000000;
 }
-
-@media screen and (max-width: 47em){
+/*These queries make sure that the main navbar appear and disappear according to the device size*/
+@media screen and (max-width: 800px){
     #nav-container {display:none;}
 }
 
-@media screen and (min-width: 47em){
-    #nav-container{display:initial;}
+@media screen and (min-width: 801px){
+    #nav-container{display:block;}
 
 }
